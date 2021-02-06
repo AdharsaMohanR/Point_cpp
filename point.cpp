@@ -20,16 +20,37 @@ Point::Point():x(0),y(0){
  return Q4;
  }
 }
- 
+ /**
+  * @brief Function isOrigin
+  * 
+  * @return true 
+  * @return false 
+  */
  bool Point::isOrigin() const{
  return((x==0)&&(y==0));
  }
+ /**
+  * @brief Function isOnaxis
+  * 
+  * @return true 
+  * @return false 
+  */
  bool Point::isOnXAxis() const{
  return(y==0);
  }
+ /**
+  * @brief Function isOnYaxis
+  * 
+  * @return true 
+  * @return false 
+  */
  bool Point::isOnYAxis() const{
  return(x==0);
  }
+ /**
+  * @brief Function Display
+  * 
+  */
  void Point::display() const{
  std::cout<<x<<"+"<<y<<"+";
  }
